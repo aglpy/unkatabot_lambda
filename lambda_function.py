@@ -39,7 +39,7 @@ def lambda_handler(event, context):
     main_thread.daemon = True
     main_thread.start()
     time.sleep(10)
-    sys.exit()
+    return True
 
 
 
