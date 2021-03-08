@@ -11,9 +11,10 @@ from m_token import bot, mi_id, group_id
 
 def main():
     # References
+    language = choice(['python', 'java', 'javascript', 'c', 'cpp'])
     codewars = "https://www.codewars.com"
     search = "/kata/search/"
-    level_ref = "?q=&r[]=-"
+    level_ref = f"{language}?q=&r[]=-"
     cat_ref = "&tags="
     opts = "&beta=false&order_by=popularity+desc"
     kata_class = "list-item kata bg-ui-section p-4 rounded-lg shadow-md"
